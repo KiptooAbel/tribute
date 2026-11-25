@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A tribute to Elly Savatia, Kenyan innovator and founder of Signvrse, creator of Terp 360.">
+  <title>Tribute to Elly Savatia</title>
+  <style>
+    :root {
+      --ink: #1b2250;
+      --paper: #f7f6fb;
+      --gold: #f0b429;
+      --muted: #4a5078;
+      --line: #d9d8e8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.75;
+      color: var(--ink);
+      background: var(--paper);
+    }
+    h1, h2, h3, nav, figcaption, footer, th {
+      font-family: "Trebuchet MS", Verdana, sans-serif;
+    }
+    a { color: var(--ink); }
+    a:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+
+    /* Header */
+    header {
+      background: var(--ink);
+      color: #fff;
+      padding: 4rem 1.5rem 3rem;
+      text-align: center;
+    }
+    header h1 { font-size: clamp(2.2rem, 6vw, 3.8rem); margin: 0 0 .5rem; letter-spacing: -.02em; }
+    header p { margin: 0 auto; max-width: 36rem; color: #d6d9f5; font-size: 1.15rem; }
+    header img {
+      width: 150px; height: 150px; border-radius: 50%;
+      border: 4px solid var(--gold); background: #fff; margin-bottom: 1.5rem;
+    }
+
+    /* Navigation */
+    nav { background: var(--gold); position: sticky; top: 0; z-index: 5; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; }
+    nav a { display: block; padding: .85rem 1.1rem; color: var(--ink); text-decoration: none; font-weight: 700; }
+    nav a:hover { background: rgba(27, 34, 80, .12); }
+
+    /* Layout */
+    .page { max-width: 62rem; margin: 0 auto; padding: 2rem 1.5rem; display: grid; grid-template-columns: 1fr 17rem; gap: 2.5rem; }
+    section { margin-bottom: 2.5rem; }
+    h2 { border-left: 6px solid var(--gold); padding-left: .75rem; font-size: 1.7rem; margin-top: 0; }
+    p { max-width: 42rem; }
+
+    blockquote {
+      margin: 2rem 0; padding: 1.2rem 1.5rem;
+      background: #fff; border-left: 6px solid var(--ink);
+      font-size: 1.3rem; font-style: italic;
+    }
+    blockquote cite { display: block; margin-top: .5rem; font-size: .95rem; font-style: normal; color: var(--muted); }
+
+    /* Timeline */
+    ol.timeline { list-style: none; padding: 0; margin: 0; border-left: 3px solid var(--line); }
+    ol.timeline li { padding: 0 0 1.4rem 1.4rem; position: relative; }
+    ol.timeline li::before {
+      content: ""; position: absolute; left: -9px; top: .55rem;
+      width: 15px; height: 15px; border-radius: 50%; background: var(--gold); border: 3px solid var(--ink);
+    }
+    ol.timeline time { font-family: "Trebuchet MS", Verdana, sans-serif; font-weight: 700; display: block; }
+
+    /* Table */
+    table { border-collapse: collapse; width: 100%; background: #fff; }
+    th, td { padding: .7rem .9rem; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+    th { background: var(--ink); color: #fff; }
+    caption { text-align: left; padding: .5rem 0; font-style: italic; color: var(--muted); }
+
+    /* Sidebar */
+    aside { background: #fff; padding: 1.3rem; border-top: 6px solid var(--gold); align-self: start; }
+    aside h3 { margin-top: 0; }
+    aside dl { margin: 0; }
+    aside dt { font-weight: 700; font-family: "Trebuchet MS", Verdana, sans-serif; margin-top: .8rem; }
+    aside dd { margin: 0; color: var(--muted); }
+
+    footer { background: var(--ink); color: #d6d9f5; text-align: center; padding: 2rem 1.5rem; font-size: .95rem; }
+    footer a { color: var(--gold); }
+
+    @media (max-width: 800px) {
+      .page { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23fff'/%3E%3Ctext x='50' y='62' font-size='40' text-anchor='middle' fill='%231b2250' font-family='Verdana' font-weight='bold'%3EES%3C/text%3E%3C/svg%3E"
+         alt="Initials ES placeholder. Replace with a photo of Elly Savatia.">
+    <h1>Elly Savatia</h1>
+    <p>A Kenyan innovator who taught machines to speak in sign language, so that no one is left out of the conversation.</p>
+  </header>
+
+  <nav aria-label="Main">
+    <ul>
+      <li><a href="#story">His story</a></li>
+      <li><a href="#work">His work</a></li>
+      <li><a href="#milestones">Milestones</a></li>
+      <li><a href="#why">Why I admire him</a></li>
+      <li><a href="#sources">Sources</a></li>
+    </ul>
+  </nav>
+
+  <div class="page">
+    <main>
+
+      <section id="story">
+        <h2>A curious boy from Western Kenya</h2>
+        <p>
+          Elly Savatia grew up in Western Kenya, fascinated by how things worked. From about the age of ten he was
+          taking apart radios, clocks and other household electronics just to see what was inside.
+          That habit of looking closely at a problem became the foundation of everything he has built since.
+        </p>
+        <p>
+          Before the COVID-19 pandemic he ran robotics workshops in schools across Kenya. During one of those visits
+          to a high school in Western Kenya, he came face to face with the communication barriers faced by
+          deaf learners. It was a turning point: he decided to use technology to close that gap.
+        </p>
+      </section>
+
+      <section id="work">
+        <h2>Building technology with the deaf community</h2>
+        <p>
+          Together with his friend and co-founder Emmanuel Mulengwa, Elly first developed <strong>Veezaviz</strong>,
+          a mobile application that interprets hand movements into text for people who are deaf. That early work grew into
+          <strong>Signvrse</strong>, a social enterprise he founded in 2020 and leads as Founder and CEO.
+        </p>
+        <p>
+          Signvrse uses artificial intelligence and 3D animation to turn speech and text into lifelike
+          sign language avatars. Its flagship product, <strong>Terp 360</strong>, translates spoken language into
+          sign language in real time. The avatars are trained on sign language data recorded locally,
+          so they reflect how people in Africa actually sign.
+        </p>
+
+        <blockquote>
+          “You don’t build solutions and take them to the people, you build with them.”
+          <cite>Elly Savatia, speaking about how Signvrse works</cite>
+        </blockquote>
+
+        <figure>
+          <figcaption><strong>The idea in one line:</strong> Speech goes in, a signing avatar comes out.</figcaption>
+        </figure>
+      </section>
+
+      <section id="milestones">
+        <h2>Milestones</h2>
+        <ol class="timeline">
+          <li>
+            <time datetime="2020">2020</time>
+            Founds Signvrse and is recognised among young leaders by the We Are Family Foundation.
+          </li>
+          <li>
+            <time datetime="2021">2021</time>
+            Veezaviz, the app he built with Emmanuel Mulengwa, gains attention across Africa.
+          </li>
+          <li>
+            <time datetime="2023">2023</time>
+            Signvrse is featured among the Commonwealth Innovation Awards winners.
+          </li>
+          <li>
+            <time datetime="2025-10-16">16 October 2025</time>
+            Wins the Royal Academy of Engineering’s Africa Prize for Engineering Innovation, with
+            £50,000 to scale Terp 360. He pitched to a live audience and a panel of seven judges.
+          </li>
+        </ol>
+      </section>
+
+      <section id="recognition">
+        <h2>Recognition at a glance</h2>
+        <table>
+          <caption>Selected honours and programmes linked to Elly Savatia</caption>
+          <thead>
+            <tr><th scope="col">Organisation</th><th scope="col">Recognition</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Royal Academy of Engineering</td><td>Africa Prize for Engineering Innovation, 2025 (winner)</td></tr>
+            <tr><td>Commonwealth</td><td>Commonwealth Innovation Awards, 2023 (Signvrse)</td></tr>
+            <tr><td>We Are Family Foundation</td><td>Young changemaker programmes (2020 and 2021)</td></tr>
+            <tr><td>Business Daily Africa</td><td>Top 40 Under 40 profile</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="why">
+        <h2>Why I admire him</h2>
+        <p>
+          As a young software developer in Nairobi, I find Elly’s story deeply encouraging. He did not wait for
+          permission, funding or a perfect setting. He started with curiosity, noticed a real problem in his own
+          community, and kept building until the solution reached the world stage.
+        </p>
+        <p>What I take from his journey:</p>
+        <ul>
+          <li>Technology is most powerful when it includes the people who are usually left out.</li>
+          <li>The best solutions are built <em>with</em> the community, not just <em>for</em> it.</li>
+          <li>Young Africans can compete and lead at the highest level of engineering.</li>
+          <li>Curiosity, practised daily, is a career plan.</li>
+        </ul>
+        <p>
+          Thank you, Elly, for showing that code can give people a voice.
+        </p>
+      </section>
+
+      <section id="sources">
+        <h2>Sources</h2>
+        <ul>
+          <li><a href="https://www.raeng.org.uk/news/kenyan-innovator-elly-savatia-named-the-2025-africa-prize-for-engineering-innovation">Royal Academy of Engineering: Africa Prize 2025 announcement</a></li>
+          <li><a href="https://africaprize.raeng.org.uk/awardees/winners">Africa Prize winners page</a></li>
+          <li><a href="https://top40.businessdailyafrica.com/candidates/elly-savatia">Business Daily Africa: Top 40 Under 40 profile</a></li>
+          <li><a href="https://thecommonwealth.org/commonwealth-innovation-awards-2023-winners">Commonwealth Innovation Awards 2023 winners</a></li>
+          <li><a href="https://www.ashoka.org/en/story/elly-savatia-mobilizing-young-changemakers-through-sdgs-kenya-and-nigeria">Ashoka: Elly Savatia’s changemaker journey</a></li>
+        </ul>
+      </section>
+
+    </main>
+
+    <aside aria-label="Quick facts">
+      <h3>Quick facts</h3>
+      <dl>
+        <dt>Country</dt><dd>Kenya</dd>
+        <dt>Known for</dt><dd>Founder of Signvrse; creator of Terp 360</dd>
+        <dt>Field</dt><dd>Assistive technology, AI, 3D animation</dd>
+        <dt>Biggest prize</dt><dd>Africa Prize for Engineering Innovation, 2025</dd>
+        <dt>Prize money</dt><dd>£50,000</dd>
+      </dl>
+    </aside>
+  </div>
+
+  <footer>
+    <p>A student tribute page built with HTML and CSS.</p>
+    <p>Created by Abel. <a href="#story">Back to top</a></p>
+  </footer>
+
+</body>
+</html>
